@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gayatri Sagade • Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Gayatri Sagade — Computer Engineering graduate. Projects, skills, resume and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header container">
+    <a class="brand" href="#hero" aria-label="Go to top">
+      <span class="logo">GS</span>
+      <span class="brand-text">Gayatri <strong>Sagade</strong></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+      <ul id="menu" class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="themeToggle" class="btn-ghost" aria-label="Toggle theme">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="hero" class="hero container reveal">
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="accent">Gayatri Sagade</span></h1>
+        <p class="tagline">Computer Engineering Graduate • Aspiring Data Scientist & Developer</p>
+        <div class="cta-group">
+          <a class="btn" href="#projects">View My Work</a>
+          <a class="btn-ghost" href="#contact">Get in Touch</a>
+        </div>
+        <ul class="socials">
+          <li><a href="mailto:gayatrisagade1028@gmail.com" aria-label="email">📧</a></li>
+          <li><a href="https://www.linkedin.com/in/gayatrisagade" target="_blank" rel="noopener"
+              aria-label="LinkedIn">in</a></li>
+          <li><a href="https://github.com/gayatrisagade" target="_blank" rel="noopener" aria-label="GitHub">GH</a></li>
+        </ul>
+      </div>
+      <div class="hero-media">
+        <img src="assets/profile.jpg" alt="Profile photo of Gayatri Sagade"
+          onerror="this.src='assets/profile-placeholder.svg'">
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about container reveal">
+      <h2>About Me</h2>
+      <p>
+        I’m a Computer Engineering graduate (CGPA 8.48/10) eager to apply my skills, gain practical experience, and
+        contribute to impactful projects.
+        I enjoy building clean, user-friendly interfaces and applying data-driven methods to solve problems.
+      </p>
+      <div class="chips">
+        <span class="chip">Python</span>
+        <span class="chip">C++</span>
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">MySQL</span>
+        <span class="chip">Machine Learning</span>
+        <span class="chip">Deep Learning</span>
+        <span class="chip">Data Visualization</span>
+      </div>
+      <div class="edu">
+        <article class="edu-item">
+          <h3>BE – Computer Engineering</h3>
+          <p>Vidya Pratishthan’s Kamalnayan Bajaj Institute of Engineering and Technology, Baramati</p>
+          <p><small>2021–2025 • CGPA 8.48/10</small></p>
+        </article>
+        <article class="edu-item">
+          <h3>12th</h3>
+          <p>Tuljaram Chaturchand College, Baramati</p>
+          <p><small>2019–2021 • 94%</small></p>
+        </article>
+        <article class="edu-item">
+          <h3>10th</h3>
+          <p>Shri Jagdamba Vidyalaya, Rashin</p>
+          <p><small>2019 • 90.6%</small></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects container reveal">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <div class="filters" role="tablist" aria-label="Project filters">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="ml">ML/DL</button>
+          <button class="filter-btn" data-filter="java">Java</button>
+        </div>
+      </div>
+      <div class="grid">
+        <!-- Project Card 1 -->
+        <article class="card" data-tags="ml">
+          <div class="card-body">
+            <h3 class="card-title">Deepfake Detection System</h3>
+            <p class="card-desc">
+              Built a deepfake detection pipeline using Vision Transformers (ViTs) for images and RNNs for audio
+              classification.
+              Wrapped with a Flask interface for easy live testing.
+            </p>
+            <ul class="stack">
+              <li>Python</li>
+              <li>ViT</li>
+              <li>RNN</li>
+              <li>Flask</li>
+            </ul>
+          </div>
+          <div class="card-actions">
+            <a class="btn-ghost" href="https://github.com/gayatrisagade/DeepFake-Detection-System"
+              aria-label="GitHub repository">GitHub</a>
+          </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="card" data-tags="java">
+          <div class="card-body">
+            <h3 class="card-title">PharmaCare System</h3>
+            <p class="card-desc">
+              Desktop application using Java for frontend (Swing/JavaFX) and MySQL backend. Real-time data management
+              via JDBC.
+            </p>
+            <ul class="stack">
+              <li>Java</li>
+              <li>Swing / JavaFX</li>
+              <li>MySQL</li>
+              <li>JDBC</li>
+            </ul>
+          </div>
+          <div class="card-actions">
+            <a class="btn-ghost" href="https://github.com/gayatrisagade/pharmacy_management_system"
+              aria-label="GitHub repository">GitHub</a>
+          </div>
+        </article>
+
+        <article class="card" data-tags="ml">
+          <div class="card-body">
+            <h3 class="card-title">Power BI: Agriculture Productivity Dashboard</h3>
+            <p class="card-desc">
+              Interactive dashboards analyzing crop productivity and regional trends across Indian states.
+            </p>
+            <ul class="stack">
+              <li>Power BI</li>
+              <li>Data Viz</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Experience / Resume -->
+    <section id="experience" class="experience container reveal">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h3>AI & Data Analytics Intern</h3>
+            <p><strong>AICTE & Edunet Foundation</strong> • May 2025</p>
+            <p>Data analysis with Power BI focusing on agricultural productivity across Indian states. Built interactive
+              dashboards.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h3>Web Development Intern</h3>
+            <p><strong>Oasis Infobyte</strong> • Feb 2024</p>
+            <p>Focused on HTML, CSS, and JavaScript for frontend design. Built a personal portfolio showcasing skills
+              and projects.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="mt">Certifications</h3>
+      <ul class="certs">
+        <li>Data Science – Adhyayan IT Training and Placement</li>
+        <li>C++ Training – Spoken Tutorial Project, IIT Bombay</li>
+        <li>Software Testing – SWAYAM NPTEL</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact container reveal">
+      <h2>Contact</h2>
+      <p>Want to collaborate or just say hi? Drop a message or connect on socials.</p>
+      <form id="contactForm" class="form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+          <small class="error" id="nameError"></small>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <small class="error" id="emailError"></small>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          <small class="error" id="messageError"></small>
+        </div>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Gayatri Sagade</strong><br />
+        <a href="mailto:gayatrisagade1028@gmail.com">gayatrisagade1028@gmail.com</a>
+      </div>
+      <nav aria-label="Footer links">
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <ul class="footer-socials">
+        <li><a href="https://www.linkedin.com/in/gayatrisagade" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/gayatrisagade" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+    <p class="copyright">© <span id="year"></span> Gayatri Sagade. All rights reserved.</p>
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
